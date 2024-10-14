@@ -1,0 +1,389 @@
+/* --- Text Colors --- */
+
+.color-red {
+    color: red;
+}
+
+.highlight-orange {
+    color: #FF8000;
+    /* Color naranja para los títulos */
+}
+
+.text-primary-custom {
+    color: #405F7D;
+    /* Color azul personalizado para los textos */
+}
+
+.textblue{
+    color: #1292CF;
+}
+
+/* --- Buttons --- */
+
+.btn-danger-custom {
+    background-color: rgb(255, 0, 0);
+    /* Color rojo para el botón de continuar */
+    border: none;
+}
+
+.btn-custom {
+    background-color: #638CB5;
+    /* Color personalizado para los botones */
+    color: white;
+    /* Color del texto en los botones */
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #51789A;
+    /* Color más oscuro al hacer hover */
+}
+
+
+/* Formulario */
+
+        /* Estilos personalizados para el formulario */
+        .highlight-blue {
+            color: #2779B6;
+        }
+
+        .form-control {
+            border: 2px solid #2779B6;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-label {
+            font-weight: bold;
+            color: #2779B6;
+        }
+
+        .form-container {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary {
+            background-color: #2779B6;
+            border-color: #2779B6;
+        }
+
+        .btn-primary:hover {
+            background-color: #1f5f8c;
+            border-color: #1f5f8c;
+        }
+
+        .btn-secondary {
+            border-color: #2779B6;
+            color: #2779B6;
+        }
+
+        .btn-secondary:hover {
+            background-color: #2779B6;
+            color: #fff;
+        }
+
+        /* Estilos para la cabecera del sidebar */
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.brand-name {
+    font-family: 'Arial', sans-serif;
+    font-size: 22px;
+    color: #fff; /* Color del texto "TECNM" */
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilos para los ítems del menú */
+.navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 10px 0;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #f0f0f0;
+    color: #007BFF; /* Color del texto al hacer hover */
+}
+
+.nav-link i {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #007BFF; /* Color de los iconos */
+}
+
+.nav-link span {
+    font-size: 16px;
+}
+
+/* Estilos para los ítems activos */
+.nav-item.active .nav-link {
+    background-color: #007BFF;
+    color: white;
+}
+
+.nav-item.active .nav-link i {
+    color: white;
+}
+
+body {
+    margin: 0; /* Asegurarse de que no haya márgenes por defecto en el body */
+    font-family: Arial, sans-serif; /* O la fuente que prefieras */
+}
+
+.sidebar {
+    width: 250px; /* Ancho del menú lateral */
+    height: 100vh; /* Altura del menú lateral */
+    position: fixed; /* Mantener el menú fijo */
+    overflow-y: auto; /* Habilitar el desplazamiento si el contenido excede el tamaño */
+    background-color: #333; /* Color de fondo del menú */
+    color: white; /* Color del texto */
+}
+
+.content-container {
+    margin-left: 260px; /* Margen a la izquierda para evitar que el contenido se superponga con el menú */
+    padding: 20px; /* Relleno interno */
+}
+
+/* Aquí puedes mantener el resto de tus estilos para el modal */
+
+
+/* Estilos para el contenedor de contenido */
+#main-content {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Estilos básicos para el modal */
+.modal {
+    display: none;
+    /* Ocultar el modal por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Fondo oscuro */
+}
+
+.modal-content {
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* servicios */
+
+.services-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+h1 {
+    text-align: center;
+    color: #4A90E2;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+    font-size: 3em;
+    color: #4A90E2;
+    margin-bottom: 15px;
+    transition: color 0.3s;
+}
+
+.service-card:hover .service-icon {
+    color: #e67e22;
+}
+
+strong {
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}  
+
+
+/* sobre mi */
+
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+}
+
+.profile-description {
+    max-width: 600px;
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links a {
+    font-size: 2em;
+    color: #333;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #4A90E2;
+}
+
+.skillset {
+    margin-top: 40px;
+}
+
+.skillset h2 {
+    font-size: 2em;
+    color: #4A90E2;
+    margin-bottom: 20px;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    background-color: #e67e22;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.2em;
+}
+
+.skill:hover {
+    background-color: #4A90E2;
+    transform: scale(1.05);
+}

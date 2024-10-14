@@ -1,0 +1,184 @@
+<div class="contact-container">
+    <div class="contact-header animate__animated animate__fadeInDown">
+        <h1>Contáctame</h1>
+        <p>¿Tienes alguna pregunta o quieres trabajar conmigo? ¡No dudes en contactarme!</p>
+    </div>
+
+    <div class="contact-content">
+        <div class="contact-form animate__animated animate__fadeInLeft">
+            <h2>Envíame un mensaje</h2>
+            <form action="mailto:tuemail@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Tu correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí..."
+                        required></textarea>
+                </div>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+
+        <div class="contact-info animate__animated animate__fadeInRight">
+            <h2>También puedes encontrarme en:</h2>
+            <ul>
+                <li><i class="fas fa-envelope"></i> <a href="mailto:Odalys@gmail.com">Odalys@gmail.com</a></li>
+                <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/4881120186">Envíame un mensaje en WhatsApp</a>
+                </li>
+            </ul>
+
+            <h3>Sígueme en redes</h3>
+            <div class="social-icons">
+                <a href="https://github.com/tuusuario" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/tuusuario" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/tuusuario" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .contact-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        color: #007bff;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .contact-content {
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        gap: 40px;
+        /* Añadido más espacio entre las columnas */
+    }
+
+    .contact-form {
+        flex: 1;
+        margin-right: 40px;
+        /* Aumentado el margen entre el formulario y la información de contacto */
+    }
+
+    .contact-info {
+        flex: 1;
+    }
+
+    /* Aseguramos que en pantallas pequeñas el diseño siga siendo amigable */
+    @media (max-width: 768px) {
+        .contact-content {
+            flex-direction: column;
+            gap: 20px;
+            /* Reduce el espacio entre las columnas en pantallas pequeñas */
+        }
+
+        .contact-form {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    ul li {
+        margin-bottom: 15px;
+        font-size: 1.2em;
+    }
+
+    ul li i {
+        margin-right: 10px;
+        color: #007bff;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+    }
+
+    .social-icons a {
+        font-size: 2em;
+        color: #333;
+        margin-right: 15px;
+        transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+        color: #007bff;
+    }
+
+    @media (max-width: 768px) {
+        .contact-content {
+            flex-direction: column;
+        }
+
+        .contact-form {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+</style>

@@ -1,0 +1,139 @@
+/* --- Menu Configuration --- */
+
+body {
+    display: flex;
+}
+
+.sidebar {
+    height: 100vh;
+    background-color: #343a40;
+    padding: 1rem;
+}
+
+.sidebar .nav-link {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #495057;
+    border-radius: 4px;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+/* --- Navbar Styles --- */
+
+.navbar-custom {
+    background-color: #002D6D;
+    /* Color azul de la barra principal */
+}
+
+.navbar-custom a {
+    color: white;
+    /* Color del texto de los enlaces */
+}
+
+/* --- Top Bar Styles --- */
+
+.top-bar {
+    background-color: #E0E0E0;
+    /* Color gris de la barra superior */
+    padding: 5px 0;
+    font-size: 0.9rem;
+}
+
+.top-bar a {
+    color: #666;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+ /* Estilos del botón dentro del menú */
+ .toggle-btn {
+     font-size: 24px;
+     color: white;
+     background-color: transparent;
+     border: none;
+     margin-left: auto;
+     /* Alineación automática a la derecha */
+     padding: 0;
+     /* Eliminar padding */
+     display: flex;
+     align-items: center;
+     /* Alinear verticalmente */
+ }
+
+ .toggle-btn:hover {
+     cursor: pointer;
+     color: #ff8000;
+ }
+
+ /* Sidebar (menú de navegación) */
+ .sidebar {
+     width: 250px;
+     height: 100vh;
+     background-color: #343a40;
+     position: fixed;
+     transition: width 0.3s;
+     color: white;
+     padding-top: 20px;
+ }
+
+ /* Sidebar reducido */
+ .sidebar.collapsed {
+     width: 72px;
+     /* El ancho reducido cuando está "oculto" */
+ }
+
+ /* Contenido principal */
+ .content {
+     margin-left: 250px;
+     padding: 20px;
+     transition: margin-left 0.3s;
+ }
+
+ /* Mover contenido cuando el sidebar está colapsado */
+ .content.shifted {
+     margin-left: 60px;
+ }
+
+ /* Ocultar el texto de los enlaces cuando el sidebar esté colapsado */
+ .sidebar.collapsed .nav-link {
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+
+ .sidebar.collapsed .nav-link span {
+     display: none;
+     /* Ocultar el texto de los enlaces cuando colapsado */
+ }
+
+ /* Ocultar TECNM cuando el sidebar está colapsado */
+ .sidebar.collapsed .brand-name {
+     display: none;
+ }
+
+ /* Estilos adicionales para el texto "TECNM" */
+ .brand-name {
+     font-size: 24px;
+     color: white;
+     margin-right: 10px;
+     display: inline-block;
+ }
+
+ /* Botón y TECNM alineados en fila */
+ .sidebar-header {
+     display: flex;
+     align-items: center;
+     /* Alinear verticalmente */
+     justify-content: space-between;
+     /* Dejar espacio entre el texto y el botón */
+     margin-bottom: 20px;
+ }

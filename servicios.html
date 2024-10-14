@@ -1,0 +1,38 @@
+<h1>Servicios</h1>
+<p>Ofrecemos una amplia gama de servicios diseñados para ayudarte a crecer y mejorar en diversas áreas:</p>
+
+<div class="service-list">
+    <div class="service-card fade-in">
+        <i class="fas fa-laptop-code service-icon"></i>
+        <strong>Consultoría tecnológica:</strong>
+        <p>Brindamos asesoramiento experto en tecnología para empresas de todos los tamaños.</p>
+    </div>
+    <div class="service-card fade-in">
+        <i class="fas fa-cogs service-icon"></i>
+        <strong>Desarrollo de software personalizado:</strong>
+        <p>Creamos soluciones a medida para satisfacer tus necesidades específicas.</p>
+    </div>
+    <div class="service-card fade-in">
+        <i class="fas fa-chalkboard-teacher service-icon"></i>
+        <strong>Capacitación y formación:</strong>
+        <p>Cursos y talleres para mejorar las habilidades técnicas y profesionales de tu equipo.</p>
+    </div>
+    <div class="service-card fade-in">
+        <i class="fas fa-headset service-icon"></i>
+        <strong>Soporte técnico:</strong>
+        <p>Ofrecemos soporte continuo para garantizar que todo funcione sin problemas.</p>
+    </div>
+</div>
+
+<p>Contacta con nosotros para obtener más información sobre nuestros servicios y cómo podemos ayudarte a alcanzar tus
+    objetivos.</p>
+
+<script>
+    // Para añadir la clase de animación de aparición a los elementos
+    const serviceCards = document.querySelectorAll('.service-card');
+    serviceCards.forEach((card, index) => {
+        setTimeout(() => {
+            card.classList.add('fade-in');
+        }, index * 100); // Delay en milisegundos para cada tarjeta
+    });
+</script>
